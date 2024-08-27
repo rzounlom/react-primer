@@ -203,9 +203,11 @@ const Bob: Employee = {
   },
 };
 
+// console.log({ Bob });
+
 // const Jim: Employee = {
-//     name: "Bob"
-// }
+//   name: "Bob",
+// };
 // Error: Property 'address' is missing in type '{ name: string; }' but required in type 'Employee'.
 
 // 'Address' and 'Employee' are reusable type aliases for nested objects.
