@@ -13,13 +13,13 @@ const personLastName = person.lastName;
 const personAge = person.age;
 const personOccupation = person.occupation;
 
-console.log(
-  "Example 1 --> persion details: \n",
-  personFirstName,
-  personLastName,
-  personAge,
-  personOccupation //undefined because person object does not have occupation property
-);
+// console.log(
+//   "Example 1 --> persion details: \n",
+//   personFirstName,
+//   personLastName,
+//   personAge,
+//   personOccupation //undefined because person object does not have occupation property
+// );
 
 //Object destructuring syntax
 // In this example, we are extracting the firstName, lastName, and age properties from the person object and binding them to variables.
