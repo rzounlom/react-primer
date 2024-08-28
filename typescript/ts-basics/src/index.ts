@@ -41,12 +41,13 @@ let fruits: string[] = ["apple", "banana", "cherry"];
 
 //Example 3: Mixed Array
 // If you want to allow multiple types in an array
-let mixedArray: (number | string)[] = [1, "two", 3, "four"];
+let mixedArray: (number | string | boolean)[] = [1, "two", 3, "four"];
 // This array can contain both numbers and strings. You can use the pipe (|) to separate the types and add as many as you like.
 
 //Example 4: Array of Objects
 let users: { name: string; age: number }[] = [
   { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
   { name: "Bob", age: 30 },
 ];
 

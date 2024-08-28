@@ -9,16 +9,16 @@
 //Example 1: Extracting Selected Properties:
 const Kim = { fName: "Kim", lastName: "Smith", age: 25 };
 const { fName, ...restProps } = Kim;
-// console.log("Example 1 --> fName: ", fName); //Output: Kim
-// console.log("Example 1 --> restProps: ", restProps); //Output: { lastName: "Smith", age: 25 }
+console.log("Example 1 --> fName: ", fName); //Output: Kim
+console.log("Example 1 --> restProps: ", restProps); //Output: { lastName: "Smith", age: 25 }
 
 const book = { title: "JavaScript Handbook", author: "Jane Doe", year: 2023 };
 const { year, ...bookInfo } = book;
-// console.log("Example 1.2 --> year: ", year); //Output: 2023
-// console.log("Example 1.2 --> bookInfo: ", bookInfo); //Output: { title: 'JavaScript Handbook', author: 'Jane Doe' }
+console.log("Example 1.2 --> year: ", year); //Output: 2023
+console.log("Example 1.2 --> bookInfo: ", bookInfo); //Output: { title: 'JavaScript Handbook', author: 'Jane Doe' }
 
 //Example 3: Combining with Spread:
 const Kate = { firstName: "Kate", lastName: "Williams", yrs: 28 };
 const { yrs, ...info } = Kate;
 const updatedPerson = { ...info, age: yrs + 1 };
-// console.log("Example 3 --> updatedPerson: ", updatedPerson); //Output: { firstName: 'Kate', lastName: 'Williams', age: 29 }
+console.log("Example 3 --> updatedPerson: ", updatedPerson); //Output: { firstName: 'Kate', lastName: 'Williams', age: 29 }

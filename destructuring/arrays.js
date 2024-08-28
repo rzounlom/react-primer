@@ -13,15 +13,15 @@ const first = numbers[0];
 const second = numbers[1];
 const third = numbers[2];
 
-// console.log("Example 1 --> numbers: ", first, second, third); //Output: 1 2 3
+console.log("Example 1 --> numbers: ", first, second, third); //Output: 1 2 3
 
 //Array destructuring syntax
 const [one, two, three] = numbers;
-// console.log("Example 1 --> numbers destructured: ", first, second, third); //Output: 1 2 3
+console.log("Example 1 --> numbers destructured: ", first, second, third); //Output: 1 2 3
 
 //Example 2: Skipping Elements:
 const fruits = ["apple", "banana", "orange", "grape"];
 
 //Since arrays are indexed, we can skip elements by leaving a comma without a variable name
 const [, secondFruit, , fourthFruit] = fruits;
-// console.log("Example 2 --> fruits: ", secondFruit, fourthFruit); // Output: "banana" "grape"
+console.log("Example 2 --> fruits: ", secondFruit, fourthFruit); // Output: "banana" "grape"

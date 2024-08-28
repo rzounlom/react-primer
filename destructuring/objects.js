@@ -13,25 +13,31 @@ const personLastName = person.lastName;
 const personAge = person.age;
 const personOccupation = person.occupation;
 
-// console.log(
-//   "Example 1 --> persion details: \n",
-//   personFirstName,
-//   personLastName,
-//   personAge,
-//   personOccupation //undefined because person object does not have occupation property
-// );
+console.log(
+  "Example 1 --> persion details: \n",
+  personFirstName,
+  personLastName,
+  personAge,
+  personOccupation //undefined because person object does not have occupation property
+);
 
 //Object destructuring syntax
 // In this example, we are extracting the firstName, lastName, and age properties from the person object and binding them to variables.
 const { firstName, lastName, age, occupation } = person;
-// console.log({ firstName, lastName, age, occupation }); // Output: "Alice Smith"
+console.log({ firstName, lastName, age, occupation }); // Output: "Alice Smith"
 
 //Example 2: Adding default property to object while destructuring:
-const person2 = { firstName2: "Jane", lastName2: "Doe", age: 25 }; //need use different variable name while destructuring since lastName is already declared
+const person2 = { firstName2: "Jane", lastName2: "Doe", age2: 25 }; //need use different variable name while destructuring since lastName is already declared
 
 //adding default value to middle property
-const { firstName2, middle = "Nicole", lastName2 } = person2;
-// console.log("Example 2 --> Person details: \n", firstName2, middle, lastName2); // Output: "Jane Nicole Doe"
+const { firstName2, middle = "Nicole", lastName2, age2 } = person2;
+console.log(
+  "Example 2 --> Person details: \n",
+  firstName2,
+  middle,
+  lastName2,
+  age2
+); // Output: "Jane Nicole Doe"
 
 //Example 3: Nested Object Destructuring:
 const Alex = {
@@ -55,15 +61,15 @@ const city = Alex.userAddress.city;
 const state = Alex.userAddress.state;
 const zip = Alex.userAddress.zip;
 
-// console.log(
-//   "Example 3 --> Alex details: \n",
-//   alexName,
-//   alexAge,
-//   alexCountry,
-//   city,
-//   state,
-//   zip
-// );
+console.log(
+  "Example 3 --> Alex details: \n",
+  alexName,
+  alexAge,
+  alexCountry,
+  city,
+  state,
+  zip
+);
 
 //Object destructuring syntax
 const {
@@ -72,12 +78,12 @@ const {
   userAddress: { city: userCity, state: userState, zip: userZip },
 } = Alex;
 
-// console.log(
-//   "Example 3 --> Alex details: \n",
-//   userName,
-//   userAge,
-//   country,
-//   userCity,
-//   userState,
-//   userZip
-// ); // Output: "Alex 32 USA New York NY 10001"
+console.log(
+  "Example 3 --> Alex details: \n",
+  userName,
+  userAge,
+  country,
+  userCity,
+  userState,
+  userZip
+); // Output: "Alex 32 USA New York NY 10001"
