@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "start": "node src/index.js",
+    "start": "nodemon src/index.js",
+    "start:ts": "nodemon",
     "dev": "npm run build && npm run start"
   },
   "keywords": [],
@@ -14,5 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.9"
   }
 }

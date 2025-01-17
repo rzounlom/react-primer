@@ -114,10 +114,15 @@ function add(a: number, b: number): number {
 // The function takes two numbers and returns a number.
 
 //Example 3: Function with Optional Parameter
-function log(message: string, userId?: number): void {
+function sendMessage(message: string, userId?: number): void {
   console.log(message, userId);
 }
 // The 'userId' parameter is optional.
+
+// sendMessage("Hello, World!"); //should work
+// sendMessage("Hello, World!", 101); //should work
+// sendMessage(); //should not throw an error
+// sendMessage("Hello, World!", "cool"); //should throw an error
 
 //Example 4: Function with Default Parameter
 function multiply(a: number, b: number = 1): number {
