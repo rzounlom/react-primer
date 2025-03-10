@@ -20,5 +20,5 @@ const { year, ...bookInfo } = book;
 //Example 3: Combining with Spread:
 const Kate = { firstName: "Kate", lastName: "Williams", yrs: 28 };
 const { yrs, ...info } = Kate;
-const updatedPerson = { ...info, age: yrs + 1 };
-// console.log("Example 3 --> updatedPerson: ", updatedPerson); //Output: { firstName: 'Kate', lastName: 'Williams', age: 29 }
+// console.log("Example 3 --> yrs: ", yrs); //Output: 28
+// console.log("Example 3 --> info: ", info); //Output: { firstName: 'Kate', lastName: 'Williams' }

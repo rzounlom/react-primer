@@ -20,5 +20,5 @@ const [, , ...restNumbers] = numbers3;
 //Example 3: Combining with Spread:
 const originalArr = [1, 2, 3, 4, 5];
 const [num1, ...rest] = originalArr;
-const newArr = [num1, ...rest, 6];
-// console.log("Example 3 --> newArr: ", newArr); //Output: [1, 2, 3, 4, 5, 6]
+// console.log("Example 3 --> newArr: ", num1, rest); //Output: 1
+// console.log("Example 3 --> rest: ", rest); //Output: [ 2, 3, 4, 5 ]
