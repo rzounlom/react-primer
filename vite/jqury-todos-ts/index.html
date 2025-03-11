@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">To-Do List</h1>
+      <form class="input-group mb-3">
+        <input
+          type="text"
+          id="newTodo"
+          class="form-control"
+          placeholder="Add a new to-do"
+        />
+        <button type="submit" class="btn btn-primary" id="addTodo">Add</button>
+      </form>
+      <ul class="list-group" id="todoList">
+        <!-- To-Do items will be appended here -->
+      </ul>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/main.ts"></script>
+  </body>
+</html>

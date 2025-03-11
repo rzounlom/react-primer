@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "id": "a5d2",
+      "text": "Walk the dog",
+      "completed": false
+    },
+    {
+      "id": "dddb",
+      "text": "Clean the Kitchen",
+      "completed": false
+    },
+    {
+      "id": "4ecf",
+      "text": "Learn HTML and CSS",
+      "completed": true
+    },
+    {
+      "id": "1b50",
+      "text": "Clean room",
+      "completed": true
+    },
+    {
+      "id": "573a",
+      "text": "TEst",
+      "completed": false
+    },
+    {
+      "id": "be94",
+      "text": "test",
+      "completed": true
+    }
+  ]
+}
