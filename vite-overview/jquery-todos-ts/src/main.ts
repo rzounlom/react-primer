@@ -1,6 +1,15 @@
 $(document).ready(function () {
   const BASE_URL = "http://localhost:3002/todos";
 
+  type Todo = {
+    // type alias for the todo object
+    id: string;
+    text: string;
+    completed: boolean;
+  };
+
+  type TodoNoId = Omit<Todo, "id">; // type alias for the todo object without the id property
+
   // CRUD API functions
   const fetchTodos = async function () {
     try {
@@ -27,7 +36,7 @@ $(document).ready(function () {
     }
   };
 
-  const addTodo = async function (todo: { text: string; completed: boolean }) {
+  const addTodo = async function (todo: TodoNoId) {
     try {
       // Call the fetch API to add a new todo
       await fetch(BASE_URL, {
@@ -45,10 +54,7 @@ $(document).ready(function () {
     }
   };
 
-  const updateTodo = async function (
-    id: string,
-    todo: { text: string; completed: boolean }
-  ) {
+  const updateTodo = async function (id: string, todo: TodoNoId) {
     try {
       // Call the fetch API to update a todo
       await fetch(`${BASE_URL}/${id}`, {
@@ -86,7 +92,7 @@ $(document).ready(function () {
   // Function to render the todos
   async function render() {
     // Fetch the todos
-    const todos = await fetchTodos();
+    const todos: Todo[] = await fetchTodos();
 
     // console.log({ todos });
 
