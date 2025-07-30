@@ -16,7 +16,7 @@ const third = numbers[2];
 // console.log("Example 1 --> numbers: ", first, second, third); //Output: 1 2 3
 
 //Array destructuring syntax
-const [one, two, three] = numbers;
+const [one, two, three] = numbers; //can name variables whatever you like; they will always destcuture in order
 // console.log("Example 1 --> numbers destructured: ", first, second, third); //Output: 1 2 3
 
 //Example 2: Skipping Elements:

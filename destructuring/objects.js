@@ -24,9 +24,14 @@ const { firstName, lastName, age, occupation } = person;
 // console.log({ firstName, lastName, age, occupation }); // Output: "Alice Smith"
 
 //Example 2: Adding default property to object while destructuring:
-const person2 = { firstName2: "Jane", lastName2: "Doe", age2: 25 }; //need use different variable name while destructuring since lastName is already declared
+const person2 = {
+  firstName2: "Jane",
+  lastName2: "Doe",
+  age2: 25,
+  // middle: "Test",
+}; //need use different variable name while destructuring since lastName is already declared
 
-//adding default value to middle property
+//adding default value to middle property, in case it's not on the person2 object
 const { firstName2, middle = "Nicole", lastName2, age2 } = person2;
 // console.log("Example 2 --> Person details: \n", {
 //   firstName2,
@@ -53,31 +58,31 @@ const Alex = {
 const alexName = Alex.userName;
 const alexAge = Alex.userInfo.userAge;
 const alexCountry = Alex.userInfo.country;
-const city = Alex.userAddress.city;
-const state = Alex.userAddress.state;
-const zip = Alex.userAddress.zip;
+const alexCity = Alex.userAddress.city;
+const alexState = Alex.userAddress.state;
+const alexZip = Alex.userAddress.zip;
 
 // console.log("Example 3 --> Alex details: \n", {
 //   alexName,
 //   alexAge,
 //   alexCountry,
-//   city,
-//   state,
-//   zip,
+//   alexCity,
+//   alexState,
+//   alexZip,
 // });
 
-//Object destructuring syntax
+//Object destructuring syntax and renaming
 const {
   userName,
   userInfo: { userAge, country },
-  userAddress: { city: userCity, state: userState, zip: userZip },
+  userAddress: { city, state, zip },
 } = Alex;
 
 // console.log("Example 3 --> Alex details: \n", {
 //   userName,
 //   userAge,
 //   country,
-//   userCity,
-//   userState,
-//   userZip,
+//   city,
+//   state,
+//   zip,
 // }); // Output: "Alex 32 USA New York NY 10001"

@@ -9,8 +9,8 @@
 //Example 1: Extracting Specific Elements:
 const fruits2 = ["apple", "banana", "orange", "grape"];
 const [fruit1, fruit2, ...remainingFruits] = fruits2;
-// console.log("Example 1 --> fruit1 & fruit2: ", fruit1, fruit2); //Output: apple
-// console.log("Example 1 --> remainingFruits: ", remainingFruits); //Output: banana
+// console.log("Example 1 --> fruit1 & fruit2: ", fruit1, fruit2); //Output: apple banana
+// console.log("Example 1 --> remainingFruits: ", remainingFruits); //Output: [ 'orange', 'grape' ]
 
 //Example 2: Skipping Elements:
 const numbers3 = [1, 2, 3, 4, 5];
@@ -20,5 +20,5 @@ const [, , ...restNumbers] = numbers3;
 //Example 3: Combining with Spread:
 const originalArr = [1, 2, 3, 4, 5];
 const [num1, ...rest] = originalArr;
-// console.log("Example 3 --> newArr: ", num1, rest); //Output: 1
+// console.log("Example 3 --> num1: ", num1); //Output: 1
 // console.log("Example 3 --> rest: ", rest); //Output: [ 2, 3, 4, 5 ]

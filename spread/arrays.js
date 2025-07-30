@@ -19,7 +19,12 @@ const copiedNums2 = numbers2.concat(numbers);
 // }); //Output: [1, 2, 3] --> Noties that the original arrays are not modified
 
 //Using the spread operator to copy an array
-const copiedNumbers = [...numbers];
+const copiedNumbersWithoutSpread = [numbers]; //notice how if we don't use spread we create a nested array: [[1, 2, 3]]
+const copiedNumbers = [...numbers]; //using spread allows us to 'spread' all values out into a new array
+// console.log(
+//   "Example 1.2 --> copiedNumbersWithoutSpread: ",
+//   copiedNumbersWithoutSpread
+// ); //Output: [[1, 2, 3]]
 // console.log("Example 1.2 --> copiedNumbers: ", copiedNumbers); //Output: [1, 2, 3]
 
 //Example 2: Merging Arrays:
